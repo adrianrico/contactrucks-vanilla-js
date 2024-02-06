@@ -1,0 +1,140 @@
+$( document ).ready(function() 
+{
+    /**
+     * Pseudo DB
+     * 
+     */
+    var testDB = 
+    [
+        {
+            "cargo":"TYPE A",
+            "available":0,
+            "availableAt":new Date('2024-01-25, 00:00:00 AM'),
+        },
+        {
+            "cargo":"TYPE B",
+            "available":1,
+            "availableAt":"NOW",
+        },
+        {
+            "cargo":"TYPE C",
+            "available":1,
+            "availableAt":"NOW",
+        },
+        {
+            "accesory":"A",
+            "available":1,
+            "availableAt":"NOW",
+        },
+        {
+            "accesory":"B",
+            "available":0,
+            "availableAt":new Date('2024-01-25, 00:00:00 AM'),
+        }
+
+    ]
+        
+    //console.log(testDB)
+    console.log("DATABASE LOADED...!")
+
+
+    
+
+
+    var cargoModuleValue = "NONE"
+    $("#cargoType").change(function()
+    {
+        cargoModuleValue = $("#cargoType").val().trim()
+	
+        if(cargoModuleValue ==="NONE")
+        {
+            console.log(cargoModuleValue+" - No cargo selected...")
+        }else
+        {
+            console.log(cargoModuleValue+" - Selected cargo...\nEXECUTE AJAX!")
+
+
+            /**Simulate DB process */
+            var findCargo = testDB.find(testDB => testDB.cargo === cargoModuleValue)
+            //console.log(findCargo)
+
+            //console.log(findCargo.available)
+            findCargo.available ? 
+            console.log("Available")
+            :
+            console.log("Not available")
+        }
+        
+    })
+
+
+
+
+
+    
+    $("#acc_a").change(function()
+    {
+        var isChecked = $('#acc_a').is(":checked")
+        //console.log(isChecked)
+
+        if(isChecked)
+        {
+            /**Simulate DB process */
+            var findAccesory = testDB.find(testDB => testDB.accesory === "A")
+
+            //console.log(findAccesory)
+
+            //console.log(findAccesory.available)
+            findAccesory.available ? 
+            console.log("Available")
+            :
+            console.log("Not available")
+        }
+        
+    })
+
+
+    $("#acc_b").change(function()
+    {
+        var isChecked = $('#acc_b').is(":checked")
+        //console.log(isChecked)
+
+        if(isChecked)
+        {
+            /**Simulate DB process */
+            var findAccesory = testDB.find(testDB => testDB.accesory === "B")
+
+            //console.log(findAccesory)
+
+            //console.log(findAccesory.available)
+            findAccesory.available ? 
+            console.log("Available")
+            :
+            console.log("Not available")
+        }
+        
+    })
+
+
+
+
+
+    document.getElementById("requestDate").addEventListener("change", function() 
+    {
+        var input = this.value
+        console.log(input)
+       
+    });
+  
+
+
+
+
+    $("#requestBtn").click(function()
+    {
+       
+    })
+
+
+    
+})
