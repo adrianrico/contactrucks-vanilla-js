@@ -6,14 +6,13 @@
 ##  EXTENDED CHANGE LOG:
 
 ### INDEX
->#### HTML
->- Created basic layout.
+#### HTML
+>- Removed text from logo container.
+>- Added real logo.
 
->#### GSAP
->- Added logo image animation.
->- Added buttons animation.
+>#### JAVASCRIPT 
+>- Added button event handling. (**HREF** to another screen)
 
 >#### CSS 
->- Minimized CSS.
->- Created basic responsive version layout.
->- Changed color scheme.
+>- Reduced padding to make options card space bigger.
+>- Changed logo style.

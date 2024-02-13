@@ -30,25 +30,19 @@ body::-webkit-scrollbar
     height: 40svh;
     width:  100%;
 
-    padding: 10px;
+    padding: 15px;
+
+    text-align: center;
 
 }
 
 #logo_img
 {
-    height: 80%;
-    width:  100%;
-}
+    height: 100%;
+    width:  auto;
 
-#app_title
-{
-    height: 20%;
-    width:  100%;
-
-    text-align: center;
-
-    font-weight: 900;
-    color: #619dd4;
+    border: 2.5px solid #619dd4;
+    border-radius: 25px;
 }
 
 #main_content
@@ -56,7 +50,7 @@ body::-webkit-scrollbar
     height: 60svh;
     width:  100%; 
 
-    padding: 25px;
+    padding: 10px;
 
 }
 

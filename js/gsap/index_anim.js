@@ -17,11 +17,10 @@ function page_load_animation()
     
     /**LOGO ANIMATION */
     var logo_intro = gsap.timeline()
-    logo_intro.fromTo('#logo_img',{x:-600}, { duration: 0.2,x:50})
-    .fromTo('#logo_img',{x:50}, { duration: 0.2,x:0})
+    logo_intro.fromTo('#logo_img',{y:-600}, { duration: 0.2,y:50})
+    .fromTo('#logo_img',{y:50}, { duration: 0.2,y:0})
 
-    /**TRUCK MOVEMENT */
-    gsap.to('#logo_img',{duration:0.075,y:-1,repeat:-1,yoyo:true})
+    //gsap.to("#logo_img", {scale: 1.5, duration: 1.5});
 
     /**INTRO TEXT ANIMATION */
     var intro_text = gsap.timeline()
