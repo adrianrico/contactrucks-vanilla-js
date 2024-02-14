@@ -22,114 +22,79 @@
 <body>
     
     <div id="main_container">
-        <div id="form_container">
+
+        <div id="header_container">
             <img src="img/truck.svg" alt="truck logo" id="logo_img">
             <h1 id="logo_title">Solicita tu maniobra.</h1>
+        </div>
 
-            <div id="first_subcontainer">
+        <div id="form_container">
+            <div id="first_row">
                 <div id="left_subcontainer" class="double_subcontainer">
                     <label for="maneuver_dropdown">Maniobras disponibles.</label>
                     <select name="maneuver_dropdown" id="maneuver_dropdown">
                         <option value="">SELECCIONA</option>
-                    </select>
+                    </select> 
                 </div>
     
                 <div id="right_subcontainer" class="double_subcontainer">
-                    <label for="size_dropdown">TAMAÑO DE MANIOBRA</label>
+                    <label for="size_dropdown">Tamaño de maniobra.</label>
                     <select name="size_dropdown" id="size_dropdown">
                         <option value="">SELECCIONA</option>
                     </select>
                 </div>
             </div>
-            
-        </div>
-    </div>
 
-
-    <!-- <div id="logo_container">
-        <img src="img/truck.svg" alt="truck logo" id="logo_img">
-        <h1 id="logo_title">Solicita tu maniobra.</h1>
-    </div>
-
-    <div id="form_container">
-        <label for="maneuver_dropdown">MANIOBRAS DISPONIBLES</label>
-        <select name="maneuver_dropdown" id="maneuver_dropdown">
-            <option value="">SELECCIONA</option>
-        </select>
-
-        <label for="size_dropdown">TAMAÑO DE MANIOBRA</label>
-        <select name="size_dropdown" id="size_dropdown">
-            <option value="">SELECCIONA</option>
-        </select>
-
-        <label for="maneuver_date">SELECCIONA LA FECHA</label>
-        <input type="datetime-local" name="maneuver_date" id="maneuver_date">
-
-        <label for="full_name_input">NOMBRE COMPLETO</label>
-        <input type="text" name="full_name_input" id="full_name_input" placeholder="Escribe tu nombre.">
-
-        <label for="full_name_input">TELÉFONO</label>
-        <input type="number" name="telephone_input" id="telephone_input" placeholder="Escribe tu teléfono.">
-        
-    </div> -->
-
-
-<!-- 
-     <section>
-
-        <div id="header">
-            <div id="header_logo">
-                <img src="img/container.svg" alt="truck logo" id="logo_img">
-            </div>
-            <div id="header_text">
-                <h1>TITLE_LONG_TESTING</h1>
-            </div>
-        </div>        
-        
-        <div id="intro_text">
-            <h2>INTRO_TEST_TEXT</h2>
-            <P>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nullam nec purus odio. Proin feugiat lectus mauris. 
-               
-            </P>
-        </div>
-
-        <div id="form">
-            <div id="form_type">
-                <label for="maneuver_type">MANEUVER TYPE</label>
-                <select name="maneuver_type" id="maneuver_type_select">
-                    <option value="NOT SELECTED">-- SELECT --</option>
-                    <option value="FULL">FULL</option>
-                    <option value="SINGLE">SINGLE</option>
-                </select>
-            </div>
-
-            <div id="form_size">
-                <label for="maneuver_size">MANEUVER SIZE</label>
-                <select name="maneuver_size" id="maneuver_size_select">
-                    <option value="NOT SELECTED">-- SELECT --</option>
-                    <option value="40">40</option>
-                    <option value="20">20</option>
-                </select>
+            <div id="second_row">
+                <label for="maneuver_date" id="date_label" class="one_control_label">Elige la fecha y la hora.</label>
+                <input type="datetime-local" name="maneuver_date" id="maneuver_date" class="one_control_input">
             </div>
             
-            <div id="form_date">
-                <label for="maneuver_date">REQUEST MANIOBRAS DISPONIBLESE</label>
-                <select name="maneuver_date" id="maneuver_date">
-                    <option value="">SELECCIONA</option>
-                </select>">
+            <div id="third_row">
+                <label for="full_name_input" class="one_control_label">Quién solicita.</label>
+                <input type="text" name="full_name_input" id="full_name_input" placeholder="Escribe tu nombre." class="one_control_input">
             </div>
-            
-            <div id="form_button">
-                <button>REQUEST</button>
+
+            <div id="fourth_row">
+                <label for="full_name_input" class="one_control_label">Télefono de contacto.</label>
+                <input type="number" name="telephone_input" id="telephone_input" placeholder="Ingresa tu teléfono." class="one_control_input">
             </div>
-            
+
+            <div id="fifth_row">
+                <h2>DATOS DE DIRECCIÓN</h2>
+            </div>
+
+            <div id="sixth_row">
+                <div class="double_subcontainer">
+                    <label for="house_number" class="multi_label">Número de lugar.</label>
+                    <input type="number" name="house_number" placeholder="Ingresa el número." class="multi_input">
+           
+                </div>
     
-        </div>
+                <div id="" class="double_subcontainer">
+                    <label for="cp_input" class="multi_label">Escribe el código postal.</label>
+                    <input type="number" name="cp_input" placeholder="Ingresa el CP." class="multi_input">
+                </div>
+            </div>
 
-        
-    </section>  -->
+            <div id="seventh_row">
+                <label for="street_input" class="one_control_label">Calle.</label>
+                <input type="text" name="street_input" id="street_input" placeholder="Escribe la calle." class="one_control_input">
+            </div>
+
+            <div id="eigth_row">
+                <label for="col_input" class="one_control_label">Colonia.</label>
+                <input type="text" name="col_input" id="col_input" placeholder="Escribe la colonia." class="one_control_input">
+            </div>
+
+            <div id="nineth_row">
+                <button id="request_btn">
+                    SOLICITAR
+                </button>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
